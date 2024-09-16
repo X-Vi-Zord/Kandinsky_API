@@ -37,8 +37,8 @@ void Widget::on_pushButton_clicked()
     if(ui->line_width->text().toInt() <= 1024) {
         gen->get(ui->line_width->text().toInt(),1);
     }
-    if(ui->line_width->text().toInt() <= 1024) {
-        gen->get(ui->line_width->text().toInt(),2);
+    if(ui->line_height->text().toInt() <= 1024) {
+        gen->get(ui->line_height->text().toInt(),2);
     }
     gen->getmodel(); // запрос модели и генерации
 }
