@@ -74,11 +74,13 @@ void ImageGenerator::onReplyFinished(QNetworkReply* reply) {
             Pix = QPixmap::fromImage(Image);
             timer.stop();
             emit set_pix(Pix);
+            this->deleteLater();
         } else if (status == "FAIL") {
             QMessageBox *messagebox = new QMessageBox;
             messagebox->setText("Image generation failed.");
             timer.stop();
             messagebox->show();
+            this->deleteLater();
        } /*else {
             qDebug() << status;                                                 // при желании можно печатать статус каждые timer(ms)
         }*/
