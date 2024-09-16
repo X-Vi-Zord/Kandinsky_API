@@ -128,7 +128,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </rect>
    </property>
    <property name="text">
-    <string>Длина px</string>
+    <string>Высота px</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
