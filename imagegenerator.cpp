@@ -134,7 +134,7 @@ void ImageGenerator::get(QString text, int parametr){
     switch(parametr){
     case 1: {this->query = text; break;}
     case 2: {this->negative = text; break;}
-    case 3: {this->negative = text; break;}
+    case 3: {this->style = text; break;}
     default: {break;}
     }
 }
